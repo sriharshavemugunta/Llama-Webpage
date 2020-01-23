@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>Llama</title>
+		<link rel="stylesheet" type="text/css" href="theme.css">
+		<script src="https://use.fontawesome.com/7a3b3c5d43.js"></script>
+	</head>
+	<body>
+		<header class="pageHeader">
+			<img class="headerImg" src="headerimg.png" alt="llama" />
+			<p>It's me LLAMA GLAMA!!!</p>
+		</header>
+		<div class="backgroung_img">
+			<div class="button-grp">
+				<a class="button" href="#about_me" onclick="return display('about_me')">About Me</a>
+				<a class="button" href="#fun_facts" onclick="return display('fun_facts')">Fun Facts</a>
+				<a class="button" href="#contact_me" onclick="return display('contact_me')">Contact Me</a>
+			</div>
+		</div>
+		<div class="pageContent">
+			<div id="about_me">
+				<div class="left">
+					<p>Hi from llama, I'm your very social friend.<br> It's been 40 milions years that we have originated from central plains of North-America.</p>
+					<ul>
+						<li>My average height is between 5 feet 6 inches and 5 feet 9 inches and I weigh between 280 and 450 pounds.</li>
+						<li>I'm very calm but have a very curious attitude.</li>
+						<li>I'm very very smart and super easy to train.</li>
+						<li>Camel’s are my hippie cousins.</li>
+						<li>My soft, warm, and luxurious wool is used for spinning and weaving clothing and other knitwear items.</li>
+						<li>If you want to meet me more often you can find me in <a href="http://www.llamatoursperu.com/en/" alt="llama tours">Peru.</a></li>
+					</ul>
+					<div class="songWrap">
+						<h3 class="songText">Wanna hear about me!!</h3>
+						<img src="arrow.png" alt="arrow">
+						<audio controls="">
+	  
+							<source src="song.mp3" type="audio/mpeg">
+						  Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+				<div class="right">
+					<img src="wink.gif" alt="gif">
+				</div>
+			</div>
+			<div id="fun_facts">
+				<h1>Guess What!!!</h1>
+				<p>My fitness secret is I carry about 120 pounds on a trek with no problem. However, if you try to overload me I will simply refuse to move...hmmm!! Smart enough right???</p>
+				<p>Here is how people got crazy and creative about me. Here are some of my favourite GIF's people created for me.</p>
+				<div class="gifWrap">
+					<div><iframe src="https://giphy.com/embed/i68Balzk8Fewg" width="80%" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+				</div>
+				<div class="wedding">
+					<h3><b>DO YOU LOVE ME ALREADY???</b></h3>
+					<div class="wedWrap"><img class="weddingPic" src="weddingpic.jpg" alt="weddingpic" /></div>
+					<p>I can accompany you and be a fun and furry wedding guest. <br/> I promise I will happily pose for your photographs and it will be a unique experience that you have never experienced before!!!</p>
+				</div>
+				
+			</div>
+			<div id="contact_me">
+				Here is my favorite buddy who helped me in creating all this, He earns my high recommendation.
+				<h1>Sriharsha Vemugunta</h1>
+				<div class="socialicon contact"><p>+1(484)867-7887</p></div>
+				<div class="socialicon gmail"><a href="mailto:vemugunta.harsha@gmail.com" id="gmail">vemugunta.harsha@gmail.com</a></div>
+				<div class="socialicon outlook"><a href="mailto:svemugun@villanova.edu" id="outlook">svemugun@villanova.edu</a></div>
+				<div class="socialicon linkedin"><a href="https://www.linkedin.com/in/sriharshavemugunta">Linkedin</a></div>
+				<div class="socialicon github"><a href="https://github.com/sriharshavemugunta" id="github">GitHub</a></div>
+				<div class="socialicon twitter"><a href="https://twitter.com/harshavemugunta" id="twitter">Twitter</a></div>
+			</div>
+		</div>
+		<footer class="footer">&copy;Copy Rights Reserved</footer>
+	</body>
+	<script>
+		function display(attr){
+			var ele = document.getElementById(attr), node = ele.parentNode.firstChild;
+			while ( node ) {
+				if ( node !== this && node.nodeType === Node.ELEMENT_NODE ) 
+				 node.style.display = "none";
+				node = node.nextElementSibling || node.nextSibling;
+			}
+			ele.style.display = "block";
+		}
+	</script>
+</html>
